@@ -1,5 +1,5 @@
 function checkPalindrom(str) {
-  return str == str.split("").reverse("").join("")
+  return str.toLowerCase() == str.toLowerCase().split("").reverse("").join("")
     ? `${str} is palindrom`
     : `${str} is not polindrom`;
 }
