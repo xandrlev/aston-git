@@ -1,6 +1,7 @@
 function checkPalindrom(str) {
-  return str.toLowerCase() == str.toLowerCase().split("").reverse("").join("")
+  let newStr = str.replace(/[^a-zA-Z0-9]+/gi, '').toLowerCase();
+  return newStr.toLowerCase() == newStr.toLowerCase().split("").reverse("").join("")
     ? `${str} is palindrom`
     : `${str} is not polindrom`;
 }
-console.log(checkPalindrom("Aston"));
+console.log(checkPalindrom("Go hang a salami, I'm a lasagna hog"));
